@@ -171,6 +171,9 @@ public class Configuration extends BaseConfiguration {
     @Parameter(value = "is_cloud")
     private boolean isCloud = false;
 
+    @Parameter(value = "autostart_inputs")
+    private boolean autostartInputs = false;
+
     public boolean isMaster() {
         return isMaster;
     }
@@ -209,6 +212,10 @@ public class Configuration extends BaseConfiguration {
 
     public boolean isCloud() {
         return isCloud;
+    }
+
+    public boolean getAutostartInputs() {
+        return autostartInputs;
     }
 
     @Override
