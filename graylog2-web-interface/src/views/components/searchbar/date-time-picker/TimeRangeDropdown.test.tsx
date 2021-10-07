@@ -21,7 +21,6 @@ import mockSearchClusterConfig from 'fixtures/searchClusterConfig';
 
 import ToolsStore from 'stores/tools/ToolsStore';
 
-import { DateTimeContext } from './DateTimeProvider';
 import OriginalTimeRangeDropDown, { TimeRangeDropdownProps } from './TimeRangeDropdown';
 
 jest.mock('views/stores/SearchConfigStore', () => ({
@@ -45,6 +44,7 @@ const defaultProps = {
     type: 'relative',
     from: 300,
   },
+  limitDuration: 259200,
   noOverride: false,
   setCurrentTimeRange: jest.fn(),
   toggleDropdownShow: jest.fn(),
@@ -52,12 +52,7 @@ const defaultProps = {
 } as const;
 
 const TimeRangeDropdown = (allProps: TimeRangeDropdownProps) => (
-  <DateTimeContext.Provider value={{
-    limitDuration: 259200,
-  }}>
-    <OriginalTimeRangeDropDown {...allProps} />
-  </DateTimeContext.Provider>
-
+  <OriginalTimeRangeDropDown {...allProps} />
 );
 
 describe('TimeRangeDropdown', () => {
