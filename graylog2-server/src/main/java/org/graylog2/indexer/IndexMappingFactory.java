@@ -19,6 +19,7 @@ package org.graylog2.indexer;
 import com.github.zafarkhaja.semver.Version;
 import org.graylog2.indexer.cluster.Node;
 import org.graylog2.indexer.indexset.IndexSetConfig;
+import org.graylog2.storage.versionprobe.SearchVersion;
 
 import javax.annotation.Nonnull;
 import javax.inject.Inject;
@@ -40,7 +41,7 @@ public class IndexMappingFactory {
 
     @Nonnull
     public IndexMappingTemplate createIndexMapping(@Nonnull IndexSetConfig indexSetConfig) {
-        final Version elasticsearchVersion = node.getVersion()
+        final SearchVersion elasticsearchVersion = node.getVersion()
                 .orElseThrow(() -> new ElasticsearchException("Unable to retrieve Elasticsearch version."));
 
         final String templateType = indexSetConfig
