@@ -21,7 +21,7 @@ import styled from 'styled-components';
 import { Input } from 'components/bootstrap';
 import { HelpBlock } from 'components/graylog';
 
-import { FieldComponentProps } from '../VisualizationConfigurationOptions';
+import type { FieldComponentProps } from '../VisualizationConfigurationOptions';
 
 const StyledField = styled(Field)`
   &&[type="checkbox"] {

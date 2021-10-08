@@ -17,12 +17,12 @@
 import isDeepEqual from 'stores/isDeepEqual';
 import { DEFAULT_RANGE_TYPE } from 'views/Constants';
 import { QueriesActions } from 'views/stores/QueriesStore';
-import { ViewHook } from 'views/logic/hooks/ViewHook';
+import type { ViewHook } from 'views/logic/hooks/ViewHook';
 import View from 'views/logic/views/View';
+import type { AbsoluteTimeRange, KeywordTimeRange } from 'views/logic/queries/Query';
 import {
-  AbsoluteTimeRange,
   createElasticsearchQueryString,
-  filtersForQuery, KeywordTimeRange,
+  filtersForQuery,
 } from 'views/logic/queries/Query';
 
 type RawRelativeRange = {

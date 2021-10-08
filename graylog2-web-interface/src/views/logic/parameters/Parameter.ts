@@ -15,11 +15,9 @@
  * <http://www.mongodb.com/licensing/server-side-public-license>.
  */
 
-import * as Immutable from 'immutable';
+import type * as Immutable from 'immutable';
 
-import ParameterBinding from 'views/logic/parameters/ParameterBinding';
-
-import type { ParameterBindingJsonRepresentation } from './ParameterBinding';
+import type ParameterBinding, { ParameterBindingJsonRepresentation } from 'views/logic/parameters/ParameterBinding';
 
 import { singleton } from '../../../logic/singleton';
 

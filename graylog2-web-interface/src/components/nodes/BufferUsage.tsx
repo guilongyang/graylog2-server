@@ -25,7 +25,8 @@ import Routes from 'routing/Routes';
 import NumberUtils from 'util/NumberUtils';
 import { Spinner } from 'components/common';
 import { useStore } from 'stores/connect';
-import { MetricsActions, MetricsStore, GaugeMetric } from 'stores/metrics/MetricsStore';
+import type { GaugeMetric } from 'stores/metrics/MetricsStore';
+import { MetricsActions, MetricsStore } from 'stores/metrics/MetricsStore';
 
 const NodeBufferUsage = styled.div(({ theme }) => css`
   margin-top: ${theme.spacings.sm};

@@ -27,7 +27,7 @@ import SidecarConfig from 'components/configurations/SidecarConfig';
 import EventsConfig from 'components/configurations/EventsConfig';
 import UrlWhiteListConfig from 'components/configurations/UrlWhiteListConfig';
 import 'components/maps/configurations';
-import { Store } from 'stores/StoreTypes';
+import type { Store } from 'stores/StoreTypes';
 import usePluginEntities from 'views/logic/usePluginEntities';
 import ConfigletRow from 'pages/configurations/ConfigletRow';
 import { ConfigurationsActions, ConfigurationsStore } from 'stores/configurations/ConfigurationsStore';

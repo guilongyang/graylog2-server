@@ -21,7 +21,8 @@ import userEvent from '@testing-library/user-event';
 import mockSearchClusterConfig from 'fixtures/searchClusterConfig';
 
 import { DateTimeContext } from './DateTimeProvider';
-import OriginalTimeRangeDropDown, { TimeRangeDropdownProps } from './TimeRangeDropdown';
+import type { TimeRangeDropdownProps } from './TimeRangeDropdown';
+import OriginalTimeRangeDropDown from './TimeRangeDropdown';
 
 jest.mock('views/stores/SearchConfigStore', () => ({
   SearchConfigActions: {

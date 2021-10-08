@@ -20,7 +20,7 @@ import { Formik, Form } from 'formik';
 
 import Routes from 'routing/Routes';
 import history from 'util/History';
-import HTTPHeaderAuthConfig from 'logic/authentication/HTTPHeaderAuthConfig';
+import type HTTPHeaderAuthConfig from 'logic/authentication/HTTPHeaderAuthConfig';
 import HTTPHeaderAuthConfigDomain from 'domainActions/authentication/HTTPHeaderAuthConfigDomain';
 import { Input } from 'components/bootstrap';
 import { Button, Col, Row, Alert } from 'components/graylog';

@@ -19,7 +19,8 @@ import styled from 'styled-components';
 
 import { Checkbox } from 'components/graylog';
 import { Input } from 'components/bootstrap';
-import HeatmapVisualizationConfig, { COLORSCALES, Builder as HeatmapConfigBuilder } from 'views/logic/aggregationbuilder/visualizations/HeatmapVisualizationConfig';
+import type { Builder as HeatmapConfigBuilder } from 'views/logic/aggregationbuilder/visualizations/HeatmapVisualizationConfig';
+import HeatmapVisualizationConfig, { COLORSCALES } from 'views/logic/aggregationbuilder/visualizations/HeatmapVisualizationConfig';
 
 import Select from '../Select';
 

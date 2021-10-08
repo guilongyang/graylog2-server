@@ -25,9 +25,12 @@ import { DataTable, Spinner, PaginatedList, SearchForm, QueryHelper } from 'comp
 import { MetricContainer, CounterRate } from 'components/metrics';
 import Routes from 'routing/Routes';
 import { useStore } from 'stores/connect';
-import StreamsStore, { Stream } from 'stores/streams/StreamsStore';
-import { PaginatedPipelines, PipelinesActions } from 'stores/pipelines/PipelinesStore';
-import { DEFAULT_PAGINATION, Pagination } from 'stores/PaginationTypes';
+import type { Stream } from 'stores/streams/StreamsStore';
+import StreamsStore from 'stores/streams/StreamsStore';
+import type { PaginatedPipelines } from 'stores/pipelines/PipelinesStore';
+import { PipelinesActions } from 'stores/pipelines/PipelinesStore';
+import type { Pagination } from 'stores/PaginationTypes';
+import { DEFAULT_PAGINATION } from 'stores/PaginationTypes';
 import useLocationSearchPagination from 'hooks/useLocationSearchPagination';
 import { PipelineConnectionsStore, PipelineConnectionsActions } from 'stores/pipelines/PipelineConnectionsStore';
 

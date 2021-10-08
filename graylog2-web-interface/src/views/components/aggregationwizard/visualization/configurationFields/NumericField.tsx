@@ -20,7 +20,7 @@ import type { NumericField as NumericFieldType } from 'views/types';
 
 import { Input } from 'components/bootstrap';
 
-import { FieldComponentProps } from '../VisualizationConfigurationOptions';
+import type { FieldComponentProps } from '../VisualizationConfigurationOptions';
 
 type Props = FieldComponentProps & {
   field: NumericFieldType,

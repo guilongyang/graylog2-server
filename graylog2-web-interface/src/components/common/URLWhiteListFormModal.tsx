@@ -26,8 +26,9 @@ import type { ConfigurationsStoreState, WhiteListConfig } from 'stores/configura
 // Explicit import to fix eslint import/no-cycle
 import IfPermitted from 'components/common/IfPermitted';
 import { isPermitted } from 'util/PermissionsMixin';
-import { Store } from 'stores/StoreTypes';
-import { CurrentUserStoreState, CurrentUserStore } from 'stores/users/CurrentUserStore';
+import type { Store } from 'stores/StoreTypes';
+import type { CurrentUserStoreState } from 'stores/users/CurrentUserStore';
+import { CurrentUserStore } from 'stores/users/CurrentUserStore';
 import { ConfigurationsActions, ConfigurationsStore } from 'stores/configurations/ConfigurationsStore';
 
 const URL_WHITELIST_CONFIG = 'org.graylog2.system.urlwhitelist.UrlWhitelist';

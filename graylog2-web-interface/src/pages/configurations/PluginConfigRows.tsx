@@ -17,7 +17,7 @@
 import * as React from 'react';
 import { useMemo } from 'react';
 import { chunk } from 'lodash';
-import { SystemConfiguration } from 'views/types';
+import type { SystemConfiguration } from 'views/types';
 
 import ConfigletContainer from 'pages/configurations/ConfigletContainer';
 import ConfigletRow from 'pages/configurations/ConfigletRow';

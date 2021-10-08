@@ -15,12 +15,11 @@
  * <http://www.mongodb.com/licensing/server-side-public-license>.
  */
 import Reflux from 'reflux';
-import * as Immutable from 'immutable';
+import type * as Immutable from 'immutable';
 
 import type { RefluxActions } from 'stores/StoreTypes';
-import type { QueryId, TimeRange, TimeRangeTypes } from 'views/logic/queries/Query';
-import Query from 'views/logic/queries/Query';
-import ViewState from 'views/logic/views/ViewState';
+import Query, type { QueryId, TimeRange, TimeRangeTypes } from 'views/logic/queries/Query';
+import type ViewState from 'views/logic/views/ViewState';
 import { singletonActions } from 'logic/singleton';
 
 export type QueriesList = Immutable.OrderedMap<QueryId, Query>;

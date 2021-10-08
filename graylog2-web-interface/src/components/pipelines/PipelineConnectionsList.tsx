@@ -18,9 +18,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import naturalSort from 'javascript-natural-sort';
 
-import { PipelineType } from 'stores/pipelines/PipelinesStore';
-import { PipelineConnectionsType } from 'stores/pipelines/PipelineConnectionsStore';
-import { Stream } from 'stores/streams/StreamsStore';
+import type { PipelineType } from 'stores/pipelines/PipelinesStore';
+import type { PipelineConnectionsType } from 'stores/pipelines/PipelineConnectionsStore';
+import type { Stream } from 'stores/streams/StreamsStore';
 
 type Props = {
   pipeline: PipelineType,

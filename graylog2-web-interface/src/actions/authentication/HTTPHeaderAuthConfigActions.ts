@@ -16,9 +16,9 @@
  */
 import Reflux from 'reflux';
 
-import { RefluxActions } from 'stores/StoreTypes';
+import type { RefluxActions } from 'stores/StoreTypes';
 import { singletonActions } from 'logic/singleton';
-import HTTPHeaderAuthConfig, { HTTPHeaderAuthConfigJSON } from 'logic/authentication/HTTPHeaderAuthConfig';
+import HTTPHeaderAuthConfig, type { HTTPHeaderAuthConfigJSON } from 'logic/authentication/HTTPHeaderAuthConfig';
 
 export type ActionsType = {
   load: () => Promise<HTTPHeaderAuthConfig>,

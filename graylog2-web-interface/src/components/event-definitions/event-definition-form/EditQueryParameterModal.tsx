@@ -22,7 +22,7 @@ import LookupTableParameterEdit from 'components/lookup-table-parameters/LookupT
 import { Button } from 'components/graylog';
 import { BootstrapModalForm } from 'components/bootstrap';
 import type { LookupTable } from 'logic/lookup-tables/types';
-import LookupTableParameter, { LookupTableParameterJson } from 'views/logic/parameters/LookupTableParameter';
+import LookupTableParameter, type { LookupTableParameterJson } from 'views/logic/parameters/LookupTableParameter';
 
 type Props = {
   queryParameters: Array<LookupTableParameterJson>,

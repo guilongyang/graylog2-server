@@ -21,7 +21,7 @@ import MockStore from 'helpers/mocking/StoreMock';
 
 import { GlobalOverrideActions } from 'views/stores/GlobalOverrideStore';
 import SearchActions from 'views/actions/SearchActions';
-import GlobalOverride from 'views/logic/search/GlobalOverride';
+import type GlobalOverride from 'views/logic/search/GlobalOverride';
 import Widget from 'views/logic/widgets/Widget';
 
 import WidgetQueryControls from './WidgetQueryControls';

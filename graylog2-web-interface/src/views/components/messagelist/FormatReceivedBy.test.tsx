@@ -20,7 +20,7 @@ import * as Immutable from 'immutable';
 import { MockStore } from 'helpers/mocking';
 import { PluginStore } from 'graylog-web-plugin/plugin';
 
-import { Input } from 'components/messageloaders/Types';
+import type { Input } from 'components/messageloaders/Types';
 
 import FormatReceivedBy from './FormatReceivedBy';
 

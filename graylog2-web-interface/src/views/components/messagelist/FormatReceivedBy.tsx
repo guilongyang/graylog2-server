@@ -16,11 +16,11 @@
  */
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import * as Immutable from 'immutable';
+import type * as Immutable from 'immutable';
 
 import { Spinner } from 'components/common';
 import NodeName from 'views/components/messagelist/NodeName';
-import { Input } from 'components/messageloaders/Types';
+import type { Input } from 'components/messageloaders/Types';
 import usePluginEntities from 'views/logic/usePluginEntities';
 
 type Inputs = Immutable.Map<string, Input>;

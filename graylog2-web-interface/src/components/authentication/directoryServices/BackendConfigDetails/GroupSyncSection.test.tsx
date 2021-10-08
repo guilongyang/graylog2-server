@@ -19,9 +19,9 @@ import * as Immutable from 'immutable';
 import { render, screen } from 'wrappedTestingLibrary';
 import { PluginManifest, PluginStore } from 'graylog-web-plugin/plugin';
 import { ldapBackend as exampleAuthBackend } from 'fixtures/authenticationBackends';
-import { DirectoryServicesGroupSync } from 'components/authentication/types';
+import type { DirectoryServicesGroupSync } from 'components/authentication/types';
 
-import { DirectoryServiceBackend } from 'logic/authentication/directoryServices/types';
+import type { DirectoryServiceBackend } from 'logic/authentication/directoryServices/types';
 
 import GroupSyncSection from './GroupSyncSection';
 

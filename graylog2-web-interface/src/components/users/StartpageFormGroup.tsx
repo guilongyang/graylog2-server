@@ -15,7 +15,7 @@
  * <http://www.mongodb.com/licensing/server-side-public-license>.
  */
 import * as React from 'react';
-import * as Immutable from 'immutable';
+import type * as Immutable from 'immutable';
 import { useState, useEffect } from 'react';
 import { Field } from 'formik';
 import styled from 'styled-components';
@@ -23,7 +23,7 @@ import styled from 'styled-components';
 import { getValuesFromGRN } from 'logic/permissions/GRN';
 import { Button, Alert } from 'components/graylog';
 import { Input } from 'components/bootstrap';
-import SharedEntity from 'logic/permissions/SharedEntity';
+import type SharedEntity from 'logic/permissions/SharedEntity';
 import EntityShareDomain from 'domainActions/permissions/EntityShareDomain';
 import Spinner from 'components/common/Spinner';
 import Select from 'components/common/Select';

@@ -16,9 +16,9 @@
  */
 import React from 'react';
 import { fireEvent, render, screen } from 'wrappedTestingLibrary';
-import { Notifications } from 'theme/types';
+import type { Notifications } from 'theme/types';
 import { asMock } from 'helpers/mocking';
-import { PluginExports } from 'graylog-web-plugin/plugin';
+import type { PluginExports } from 'graylog-web-plugin/plugin';
 
 import usePluginEntities from 'views/logic/usePluginEntities';
 

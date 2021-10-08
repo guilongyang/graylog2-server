@@ -34,7 +34,7 @@ import { GlobalOverrideActions, GlobalOverrideStore } from 'views/stores/GlobalO
 import type { QueryString, TimeRange } from 'views/logic/queries/Query';
 import BottomRow from 'views/components/searchbar/BottomRow';
 import ViewActionsWrapper from 'views/components/searchbar/ViewActionsWrapper';
-import { SearchesConfig } from 'components/search/SearchConfig';
+import type { SearchesConfig } from 'components/search/SearchConfig';
 import WidgetFocusContext from 'views/components/contexts/WidgetFocusContext';
 
 import DashboardSearchForm from './DashboardSearchBarForm';

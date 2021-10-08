@@ -24,7 +24,7 @@ import WidgetEditApplyAllChangesContext from 'views/components/contexts/WidgetEd
 import { StreamsStore } from 'views/stores/StreamsStore';
 import connect, { useStore } from 'stores/connect';
 import { createElasticsearchQueryString } from 'views/logic/queries/Query';
-import Widget from 'views/logic/widgets/Widget';
+import type Widget from 'views/logic/widgets/Widget';
 import { WidgetActions } from 'views/stores/WidgetStore';
 import { DEFAULT_TIMERANGE } from 'views/Constants';
 import { SearchConfigStore } from 'views/stores/SearchConfigStore';
@@ -32,7 +32,7 @@ import { Row, Col } from 'components/graylog';
 import { Icon } from 'components/common';
 import DocumentationLink from 'components/support/DocumentationLink';
 import DocsHelper from 'util/DocsHelper';
-import GlobalOverride from 'views/logic/search/GlobalOverride';
+import type GlobalOverride from 'views/logic/search/GlobalOverride';
 import WidgetContext from 'views/components/contexts/WidgetContext';
 import { GlobalOverrideStore, GlobalOverrideActions } from 'views/stores/GlobalOverrideStore';
 import { SearchActions } from 'views/stores/SearchStore';

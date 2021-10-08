@@ -15,7 +15,7 @@
  * <http://www.mongodb.com/licensing/server-side-public-license>.
  */
 
-import {
+import type {
   TimeRange,
   NoTimeRangeOverride,
   RelativeTimeRangeStartOnly,

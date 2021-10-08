@@ -17,7 +17,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import { PublicNotificationsHooks } from 'theme/types';
+import type { PublicNotificationsHooks } from 'theme/types';
 
 import usePluginEntities from 'views/logic/usePluginEntities';
 import { Alert, Button } from 'components/graylog';

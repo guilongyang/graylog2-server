@@ -17,11 +17,11 @@
 import Reflux from 'reflux';
 
 import type { RefluxActions } from 'stores/StoreTypes';
-import SharedEntity from 'logic/permissions/SharedEntity';
+import type SharedEntity from 'logic/permissions/SharedEntity';
 import type { GRN } from 'logic/permissions/types';
 import type { PaginatedList, Pagination } from 'stores/PaginationTypes';
 import { singletonActions } from 'logic/singleton';
-import EntityShareState, { SelectedGranteeCapabilities } from 'logic/permissions/EntityShareState';
+import EntityShareState, type { SelectedGranteeCapabilities } from 'logic/permissions/EntityShareState';
 
 export type PaginatedEntityShares = PaginatedList<SharedEntity> & {
   context: {
